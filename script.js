@@ -1,4 +1,4 @@
-const API_KEY = "c0d1450459f35392f34a5d9d3e601806";
+const API_KEY = "a833ac0f01d022c0bea9835af0001185";
 
 // ELEMENTLAR
 const btn = document.getElementById("searchBtn");
