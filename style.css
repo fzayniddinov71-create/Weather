@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #e8f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.app {
+  width: 330px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: background 0.3s, color 0.3s;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.search button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #4a6cff;
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  margin-top: 20px;
+  background: #f5f7ff;
+  padding: 15px;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.35s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+footer a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* 🌙 DARK MODE */
+body.dark {
+  background: #0f172a;
+}
+
+body.dark .app {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #020617;
+}
+
+body.dark footer a {
+  color: #e5e7eb;
+}
