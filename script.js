@@ -1,4 +1,4 @@
-const API_KEY = "BU YERGA OPENWEATHER API KEY QO'Y";
+const API_KEY = "c0d1450459f35392f34a5d9d3e601806";
 
 // ELEMENTLAR
 const btn = document.getElementById("searchBtn");
