@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Air Quality</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div class="app">
+    <div class="top">
+      <h1>🌦 Ob-havo</h1>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+
+    <div class="search">
+      <input id="cityInput" type="text" placeholder="Shahar nomini yozing">
+      <button id="searchBtn">Qidirish</button>
+    </div>
+
+    <div class="card" id="weatherCard">
+      <p class="temp">🌡 Harorat: -- °C</p>
+      <p class="desc">☁ Holat: --</p>
+      <p class="humidity">💧 Namlik: -- %</p>
+      <p class="wind">💨 Shamol: -- m/s</p>
+      <p class="rain">🌧 Yomg‘ir / qor: --</p>
+
+      <hr>
+
+      <p class="aqi">🌫 Havo sifati: --</p>
+    </div>
+
+    <footer>
+      <a href="https://t.me/zayn1dd1novv" target="_blank">
+        🛠 Texnik yordam: @zayn1dd1novv
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
