@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather & Air Quality</title>
 
-  <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="app">
-    <div class="top">
-      <h1>🌦 Ob-havo</h1>
-      <button id="themeToggle" class="theme-btn">🌙</button>
-    </div>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+
+    <h1>🌤 Ob-havo</h1>
 
     <div class="search">
-      <input id="cityInput" type="text" placeholder="Shahar nomini yozing">
-      <button id="searchBtn">Qidirish</button>
+      <input id="cityInput" type="text" placeholder="Shahar nomi (Tashkent)">
+      <button onclick="getWeather()">Qidirish</button>
     </div>
 
-    <div class="card" id="weatherCard">
-      <p class="temp">🌡 Harorat: -- °C</p>
-      <p class="desc">☁ Holat: --</p>
-      <p class="humidity">💧 Namlik: -- %</p>
-      <p class="wind">💨 Shamol: -- m/s</p>
-      <p class="rain">🌧 Yomg‘ir / qor: --</p>
-
-      <hr>
-
-      <p class="aqi">🌫 Havo sifati: --</p>
+    <div id="weatherCard" class="card">
+      <h2 id="cityName"></h2>
+      <p id="desc"></p>
+      <p>🌡 <span id="temp"></span></p>
+      <p>💧 Namlik: <span id="humidity"></span></p>
+      <p>🌫 Havo sifati: <span id="air"></span></p>
     </div>
 
-    <footer>
-      <a href="https://t.me/zayn1dd1novv" target="_blank">
-        🛠 Texnik yordam: @zayn1dd1novv
-      </a>
-    </footer>
+    <a class="tg" href="https://t.me/zayn1dd1novv" target="_blank">
+      🛠 Texnik yordam: @zayn1dd1novv
+    </a>
   </div>
 
   <script src="script.js"></script>
