@@ -1,4 +1,4 @@
-const API_KEY = "859f19df4b4586f7545eaa5a3e02dd84";
+const API_KEY = "c0d1450459f35392f34a5d9d3e601806";
 
 // Dark / Light
 const themeBtn = document.getElementById("themeToggle");
